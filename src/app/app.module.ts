@@ -1,21 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CartComponent } from './cart/cart.component';
-
+import { CartComponent } from './component/cart/cart.component';
+import { HeaderComponent } from './component/header/header.component';
+import { ProductsComponent } from './component/products/products.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
-    CartComponent
+    CartComponent,
+    HeaderComponent,
+    ProductsComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
